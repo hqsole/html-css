@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: width 3s ease 0s,height 0.3s;/*宽度 花费时间  ease平滑过渡linear匀速  开始时间*/
+            transition: all 0.5s;   /*过渡写到本身上，谁做过渡动画，写到谁身上*/
+        }/*多组用逗号隔开*/
+        div:hover{
+            width: 1000px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+</body>
+</html>

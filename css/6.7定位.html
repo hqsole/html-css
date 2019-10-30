@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*margin: 100px;*/
+            /*position: relative;   !*相对定位  以自己左上角为基准点移动*!*/
+            /*top: 100px;       !*边偏移*!*/
+        }
+        .top{
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .bottom{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+<!--定位包括定位模式和边偏移  定位模式分为static自动定位  relative相对定位 absolute绝对定位 fixed固定定位-->
+<!--静态定位唯一的用处就是取消定位-->
+    <div class="top"></div>
+    <div class="bottom"></div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: url("../image/wx.jpg") repeat-x;
+        }
+        .nav li{
+            float: left;
+        }
+        .nav a{
+            display: inline-block;
+            height: 33px;
+            line-height: 33px;
+            color: #fff;
+            text-decoration: none;
+            background: url("../image/滑动门_ve.png") no-repeat;
+            padding-left: 15px;
+        }
+        .nav span{     /*右边放右圆角*/
+            background: url("../image/滑动门_ve.png")no-repeat right;
+            display: inline-block;
+            height: 33px;
+            padding-right: 15px;
+        }
+        /*.nav a:hover{*/
+            /*background-image: url(../image/滑动门_ve.png);*/
+        /*}*/
+        /*.nav a:hover span{        !*鼠标经过之后，span凹下去*!*/
+            /*background-image: url(../image/滑动门_ve.png);*/
+        /*}*/
+        .nav a:hover,.nav a:hover span{
+            background-image: url(../image/1XelfCK.jpg);
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="#">
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>微信支付</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span>公众平台</span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>

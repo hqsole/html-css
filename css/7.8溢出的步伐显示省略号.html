@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding: 30px;
+        }
+        li{
+            list-style: none;
+        }
+        li{
+            width: 200px;
+            height: 30px;
+            border: 1px solid red;
+            white-space: nowrap;   /*强制在同一行内显示所有文本，直到文本结束或者遭遇br标签对象才换行*/
+            overflow: hidden;   /*溢出的部分隐藏*/
+            text-overflow: ellipsis;  /*超出的部分用省略号代替*/
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <li>文字内容文字内容文字内容文字内容</li>
+    <li>文字内容文字内容文字内容文字内容</li>
+    <li>文字内容文字内容文字内容文字内容</li>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #ya{        /*权重 0,1,0,0*/     /*  *(0,0,0,0)  div(0,0,0,1)  .one(0,0,1,0)  #two(0,1,0,0)  行内(1,0,0,0) import(无穷)*/
+            color:purple;
+        }
+        .yase{
+            color:blue;     /*类选择器权重高与标签选择器*/  /*权重 0,0,1,0*/
+        }
+        div{                 /*权重 0，0,0,1*/
+            color:red;
+            font-size: 25px;         /*样式不重叠*/
+        }
+        *{      /*全选  权重 0,0,0,0*/
+        }
+
+        div p{      /* 0001+0001=0002   权重可以叠加*/
+            color:red;
+        }
+        p{        /* 0001 */
+            color:blue;
+        }
+
+        div{
+            color: green;     /*层叠性，权重相同，就近原则*/
+        }
+        .jianlin{
+            color: pink;      /*继承性  高度不继承，一般与文本有关的继承*/
+        }
+    </style>
+</head>
+<body>
+    <div>王可可是一条</div>
+    <div class="jianlin">
+        <p>王思聪</p>
+    </div>
+    <div class="yase" id="ya" style="color:orange">亚瑟</div>         <!--style行内  权重 1,0,0,0-->
+</body>
+</html>
+
+<!--    * (0,0,0,0)
+        div (0,0,0,1)
+        .one (0,0,1,0)
+        #two (0,1,0,0)
+        行内 (1,0,0,0)
+        import (无穷)
+
+        0,0,0,5+0,0,0,5=0,0,0,10而不是0,0,1,0
+  -->

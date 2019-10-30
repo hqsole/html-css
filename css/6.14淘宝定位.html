@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        .tb{
+            width: 520px;
+            height: 320px;
+            background-color: pink;
+            margin: 100px auto;
+            position: relative;
+        }
+        .tb a{
+            width: 24px;
+            height: 36px;
+            background-color: deeppink;
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -18px;
+        }
+        .left{
+            left: 0;
+        }
+        .tb .right{
+            right: 0;
+        }
+        .tb ul{
+            width: 70px;
+            height: 13px;
+            background: rgba(255,255,255,0.3);
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            margin-left: -35px;
+        }
+        .tb ul li{
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            float: left;
+            margin: 3px;
+            border-radius: 50%;
+        }
+        .tb .current{
+            background-color: #f40;
+        }
+    </style>
+</head>
+<body>
+    <div class="tb">
+        <img src="../image/定位实验.jpeg">
+        <a href="#" class="left"></a>
+        <a href="#" class="right"></a>
+        <ul>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

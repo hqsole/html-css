@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*a:hover  鼠标经过a链接的时候*/
+        /*li:first-child{*/
+            /*background-color: pink;*/
+        /*}*/
+        /*li:last-child{*/
+            /*background-color: yellow;*/
+        /*}*/
+        /*li:nth-child(3){*/
+            /*background-color: greenyellow;*/
+        /*}*/
+        /*li:nth-child(even){  !*选择所有偶数行*!*/
+            /*background-color: purple;*/
+        /*}*/
+        /*li:nth-child(odd){  !*选择所有奇数行*!*/
+            /*background-color: palegreen;*/
+        /*}*/
+        li:nth-child(2n){   /*2的倍数 n从0开始*/
+            background-color: peachpuff;
+        }
+        li:nth-child(2n+1){   /*相当于奇数*/
+            background-color: mediumspringgreen;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>燕洵</li>
+    <li>楚乔</li>
+    <li>小乔</li>
+    <li>亚瑟</li>
+    <li>文字</li>
+    <li>文字</li>
+    <li>文字</li>
+    <li>文字</li>
+    <li>文字</li>
+    <li>文字</li>
+    <li>文字</li>
+</ul>
+</body>
+</html>

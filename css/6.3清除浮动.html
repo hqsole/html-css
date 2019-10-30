@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clearfix:before, .clearfix:after{    /*清除浮动方法四*/
+            content: "";
+            display: table;
+        }
+        .clearfix:after{
+            clear: both;
+        }
+        /*.clearfix:after{*/      /*清除浮动方法三*/
+            /*content: "";*/
+            /*display: block;*/
+            /*height: 0;*/
+            /*clear: both;*/
+            /*visibility: hidden;*/
+        /*}*/
+        .clearfix{
+            *zoom: 1;      /*zoom 1就是ie6 清除浮动方式  * ie7以下的版本所识别*/
+        }
+        .father{
+            border: 1px solid red;
+            width: 300px;
+            /*overflow: hidden;    !*清除浮动二 ，给父亲加overflow:hidden/auto*!*/
+        }
+        .big{
+            width: 100px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+        .small{
+            width: 80px;
+            height: 80px;
+            background-color: orange;
+            float: left;
+        }
+        .footer{
+            width: 400px;
+            height: 100px;
+            background-color: palegreen;
+        }
+        /*.clear{*/
+            /*clear: both;     !* 清除浮动一  如果清除了浮动，父亲自动检测孩子的高度，以最高的为准*!*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--清除浮动主要为了解决父级元素因为子级浮动引起高度为0的情况-->
+    <div class="father clearfix">    <!--清除浮动方法三,4  伪元素清除法-->
+        <div class="big"></div>
+        <div class="small"></div>
+        <!--<div class="clear"></div>    &lt;!&ndash;额外标签法   最后一个浮动标签后添加一个新标签，清除浮动&ndash;&gt;-->
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

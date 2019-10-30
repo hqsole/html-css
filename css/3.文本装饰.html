@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            /*text-decoration: underline;*/
+            /*text-decoration: overline;*/
+            /*text-decoration: line-through;*/
+            text-decoration: none;
+        }
+        em{
+            font-style: normal;  /*取消倾斜*/
+        }
+        div p{
+            color:pink;
+        }
+        .andy p{
+            color:red;
+        }
+        ul li{
+            color:#daa520;
+        }
+
+        ul li  a{
+            color:green;      /*后代选择器，所有后代的意思*/
+        }
+        ul li > a{              /*子代选择器，指的是亲儿子， 大于号分割  此时的a一定是li的亲儿子*/
+            color:blueviolet;
+        }
+        .father > li > a{
+            color:brown;
+        }
+
+        div.orange{       /* 交集选择器  即是div 又叫orange*/
+            color:orange;
+        }
+
+        /*div{
+            color:red;
+        }
+        span{
+            color:red;
+        }
+        p{
+            color:red;
+        }*/
+        div,span,p{      /*并集选择器 用逗号隔开， 代表和集体申明 适合于相同样式*/
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div>装饰自己</div>
+    <em>倾斜</em>
+    <s>现价188</s>
+
+
+    <div>王者荣耀</div>
+    <div>王者荣耀</div>
+    <div>王者荣耀</div>
+    <div>
+        <p>安其拉</p>
+    </div>
+    <div>
+        <p>安其拉</p>
+    </div>
+    <div class="andy">
+        <p>安其拉</p>
+    </div>
+    <p>王者荣耀</p>
+    <p>王者荣耀</p>
+    <ul>
+        <li>苹果</li>
+        <li>橘子</li>
+        <li>葡萄</li>
+        <li>香蕉</li>
+    </ul>
+
+
+    <ul>
+        <li>
+            <a href="#">一级菜单</a>
+            <div>
+                <a href="#">二级菜单</a>
+            </div>
+        </li>
+    </ul>
+
+
+    <ul class="father">
+        <li>
+            <a href="#">123</a>
+            <ul>
+                <li>
+                    <a href="#">abc</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div>交集选择器</div>
+    <div>交集选择器</div>
+    <div class="orange">交集选择器</div>
+    <p>交集选择器</p>
+    <p>交集选择器</p>
+    <p>交集选择器</p>
+    <p class="blue">交集选择器</p>
+
+    <div>并集选择器</div>
+    <div>并集选择器</div>
+    <div>并集选择器</div>
+    <p>并集选择器</p>
+    <span>并集选择器</span>
+    <h1>并集选择器</h1>
+    <a href="#">并集选择器</a>
+</body>
+</html>
